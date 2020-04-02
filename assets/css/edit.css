@@ -1,0 +1,17 @@
+.logreg-table-minimal {
+	padding: 30px 30px 10px 30px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #2D3136;
+}
+
+.logreg-table {
+	margin: auto;
+	width: 350px;
+	text-align: center;
+	position: relative;
+}
+
+.pricing-table-minimal {
+	border-radius: 25px;
+}
