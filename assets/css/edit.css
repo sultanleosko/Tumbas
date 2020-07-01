@@ -8,10 +8,174 @@
 .logreg-table {
 	margin: auto;
 	width: 350px;
+    padding: 40px;
 	text-align: center;
+	position: relative;
+}
+
+.logreg-table-shadowed {
+    -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+.dashjer-table-minimal {
+	padding: 10px 30px 30px 50px;
+    border-radius: 25px;
+    background-color: #5683f8;
+    color: white;
+}
+
+.dashjer-table {
+	width: 100%;
 	position: relative;
 }
 
 .pricing-table-minimal {
 	border-radius: 25px;
+}
+
+.tabs-nav-side .tabs-nav {
+	width: 6%;
+	border-radius: 30px;
+}
+
+.fancy-box-offer img {
+	max-width: 110px;
+}
+
+.fancy-box-offer .fancy-box-cell {
+	display: -webkit-inline-box;
+}
+
+.liquid-filter-items {
+	margin-bottom: 0;
+}
+
+.modal-footer .btn+.btn {
+    margin: 0;
+}
+
+.btn-cart {
+    margin: 0;
+}
+
+.alert {
+    border-radius: .95rem;
+}
+
+.alert p {
+    margin-bottom: 0;
+}
+
+.form-control {
+    border-radius: .65rem;
+    height: 40px;
+}
+
+.input-group-text {
+    border-top-left-radius: .65rem;
+    border-bottom-left-radius: .65rem;
+}
+
+.custom-select {
+    border-radius: .65rem;
+    height: 40px;
+}
+
+.custom-file-label {
+    border-radius: .65rem;
+}
+
+/* Form Slide Registrasi */
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    border-radius: 25px;
+    padding: 40px;
+    width: 350px;
+    min-width: 300px;
+    -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+::placeholder {
+    color: #CCCCCC;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/*
+button {
+    background-color: #F13C46;
+    color: #ffffff;
+    border-radius: 50em;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+}*/
+
+.tab {
+    display: none;
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #5683f8;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.finish {
+    background-color: #5683f8;
+}
+/* End Form Slide Registrasi */
+
+.modal-header .close {
+    padding: 1.3rem 1.5rem;
+    margin: -1rem -1rem -1rem auto;
+}
+
+.modal-header .close:hover {
+    background-color: transparent;
+}
+
+.modal-header {
+    border-bottom: 0px;
+}
+
+.modal-footer {
+    border-top: 0px;
+}
+
+.modal-content {
+    border-radius: 25px;
+}
+
+.modal-content {
+    padding: 30px;
+}
+
+.badge-edit {
+    display: inline-block;
+    padding: .5em .7em;
+    font-size: 90%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }

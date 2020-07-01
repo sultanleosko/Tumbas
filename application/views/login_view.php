@@ -9,9 +9,11 @@
 		
 		<link rel="shortcut icon" href="./favicon.png" />
 		
-		<title>Ave HTML Template</title>
+		<title>Tumbas - Login</title>
 		
 		<link href="https://fonts.googleapis.com/css?family=Roboto%7cRubik:300,400" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		
 		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendors/liquid-icon/liquid-icon.min.css" />
 		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendors/font-awesome/css/font-awesome.min.css" />
@@ -30,7 +32,7 @@
 		<div id="wrap">
 			<header class="main-header main-header-overlay" data-sticky-header="true" data-sticky-options='{ "stickyTrigger": "first-section" }'>
 				<div class="mainbar-wrap">
-					<div class="container-fluid mainbar-container">
+					<div class="container mainbar-container">
 						<div class="mainbar">
 							<div class="row mainbar-row align-items-lg-stretch">
 								<div class="col text-left py-4">
@@ -62,28 +64,38 @@
 			<main id="content" class="content">
 				<section class="vc_row fullheight d-flex flex-wrap align-items-center" style="background-color: #5683f8;">
 					<div class="container">
-						<div class="logreg-table logreg-table-minimal">
-							<div class="contact-form contact-form-inputs-filled contact-form-button-circle">
-								<form action="assets/php/mailer.php" method="post" novalidate="novalidate">
+						<div class="logreg-table logreg-table-minimal logreg-table-shadowed">
+							<!--<div class="contact-form contact-form-inputs-filled contact-form-button-circle">-->
+								<form action="<?php echo site_url(); ?>general/login" method="post">
 									<div class="row">
 										<div class="col-md-12">
-											<input class="bg-athens-gray px-4" type="text" name="username" aria-required="true" aria-invalid="false" placeholder="Username" required>
-										</div><!-- /.col-md-12 -->
+											<?php
+					                            if(!empty($this->session->flashdata('notif_login'))) {
+					                                echo $this->session->flashdata('notif_login');
+					                            }
+					                        ?>
+										</div>
 										<div class="col-md-12">
-											<input class="bg-athens-gray px-4" type="password" name="password" aria-required="true" aria-invalid="false" placeholder="Password" required>
-										</div><!-- /.col-md-12 -->
+											<div class="form-group">
+												<input class="form-control bg-athens-gray px-4" type="text" name="username" placeholder="Username">
+											</div>
+										</div>
 										<div class="col-md-12">
-											<input type="submit" value="SIGN IN" class="font-size-14 ltr-sp-1">
+											<div class="form-group">
+												<input class="form-control bg-athens-gray px-4" type="password" name="password" placeholder="Password">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<input class="btn btn-default circle btn-bordered text-uppercase font-weight-bold border-thin font-size-14 lh-15 px-4 py-2 mx-0" type="submit" name="submit_masuk" value="Sign In">
 										</div><!-- /.col-md-12 -->
 										<div class="col-md-12">
 											<hr>
-											<p class="font-size-12">Don't have Tumbas's account? <a href="<?php echo base_url(); ?>general/register">Sign Up</a></p>
+											<p class="font-size-12">Don't have Tumbas's account? <a href="<?php echo base_url(); ?>general/laman_register">Sign Up</a></p>
 										</div>
 									</div><!-- /.row -->
 								</form>
-								<div class="contact-form-result hidden"></div><!-- /.contact-form-result -->
-							</div><!-- /.contact-form -->
-						</div>
+							</div>						
+						<!--</div>-->
 					</div>
 				</section>
 			</main>
